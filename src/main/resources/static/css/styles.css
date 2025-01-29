@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica Neue, Helvetica, Arial, 文泉驛正黑, WenQuanYi Zen Hei,
+		Hiragino Sans GB, 儷黑 Pro, LiHei Pro, Heiti TC, 微軟正黑體,
+		Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;
+	line-height: 1.2;
+}
+
+body{
+	background-color: #0a092d;
+	height: 100vh;
+}
+

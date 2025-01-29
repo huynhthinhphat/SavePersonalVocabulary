@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang chủ</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/media.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+	<div th:include="/views/header/header.html"></div>
+	<div id="form-add-word">
+		<form id="form">
+			<div>
+				<input type="text" id="word" name="word" placeholder="Nhập từ vựng mới..." required autocomplete="off">
+				<div class="space"></div>
+				<input type="text" id="meaning" name="meaning" placeholder="Nhập nghĩa..." required autocomplete="off">
+			</div>
+			<button style="display: none">Thêm</button>
+		</form>
+	</div>
+	<div class="form-table">
+		<span id="number_word" style="color: whitesmoke; font-weight: 600; font-size: 2.3vh"></span>
+		<table>
+			<thead>
+				<tr>
+					<td>no</td>
+					<td>Từ vựng</td>
+					<td>Nghĩa</td>
+					<td>Chức năng</td>
+				</tr>
+			</thead>
+			<tbody id="tbody"></tbody>
+		</table>
+		<div id="page"></div>
+	</div>
+	<div style="height: 3vh"></div>
+	<div id="notice">
+		<div style="margin-right: .5rem;">
+			<i class="fa-regular fa-circle-check"></i>
+		</div>
+		<div>
+			<span id="text_notice"></span>
+		</div>
+	</div>
+</body>
+</html>
